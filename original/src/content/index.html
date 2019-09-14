@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="cache-control" content="max-age=0">
+        <meta http-equiv="cache-control" content="no-cache">
+        <meta http-equiv="expires" content="-1">
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 11:00:00 GMT">
+        <meta http-equiv="pragma" content="no-cache">
+        <title>CSHU-271 Time Shredder</title>
+        <link rel="stylesheet" href="css/site.css">
+        <link rel="stylesheet" href="css/jquery-widgets.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="js/site.js"></script>
+        <script src="js/nav.js"></script>
+        <script src="js/user.js"></script>
+        <script src="js/comment.js"></script>
+        <script src="js/article.js"></script>
+        <script src="js/session.js"></script>
+    </head>
+    <body>
+
+        <div id="header">Time Shredder</div>
+
+        <div id="login_bar">Log In</div>
+
+        <div class="topnav"></div>
+        <div id="main_content"> 
+            <div id="article_list"></div>
+        </div>  
+
+        <div id="post_dialog" title="Post An Article"></div>
+        <div id="verify_dialog" title="Verify"></div>
+        <div id="register_dialog" title="Register"></div>
+        <div id="login_dialog" title="Log In"></div>
+        <script>$(document).ready(
+                    function () {
+                        nav.draw();
+                        session.drawLogin();
+                        article.load();
+                    });
+        </script>
+
+    </body>
+</html>
